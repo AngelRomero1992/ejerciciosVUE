@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Input Alert</title>
+    <style>
+        /* Estilo del contenedor principal */
+        #app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo del input */
+        input {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        /* Estilo del botón */
+        button {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Verde más oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- Aquí se montará nuestro componente InputAlert -->
+        <input-alert></input-alert>
+    </div>
+
+    <!-- Incluir Vue.js -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- Incluir nuestro archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
