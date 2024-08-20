@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="app" class="container mt-5">
+        <h1 class="text-center">Login</h1>
+
+        
+<!-- renderizado-->
+        <div v-if="loginType === 'username'">
+            <!-- Botones para cambiar entre username y email -->
+        <div class="text-center mb-4">
+            <button @click="loginType = 'username'" class="btn btn-primary mr-2">Ingresar con Nombre de Usuario</button>
+        </div>
+            <label>Nombre de Usuario</label>
+            <input class="form-control" placeholder="Ingrese su nombre de usuario" key="username-input">
+        </div>
+        <div v-else>
+            <!-- Botones para cambiar entre username y email -->
+        <div class="text-center mb-4">
+            <button @click="loginType = 'email'" class="btn btn-secondary">Ingresar con Email</button>
+        </div>
+            <label>Email</label>
+            <input class="form-control" placeholder="Ingrese su email" key="email-input">
+        </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app8.js"></script>
+</html>
